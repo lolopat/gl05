@@ -1,0 +1,162 @@
+			body{
+				/*background-image		:url('../pics/tlo1bw.jpg');*/
+				margin					: 0;
+				padding					: 0;
+				background-attachment	: fixed;
+				/*width: 50%;*/
+				/*background: url(bgimage.jpg) no-repeat;*/
+				background-size: 110%;
+				
+				/*background-width: 100%;*/
+				overflow-y: scroll;
+				
+				color: white;
+				letter-spacing: 0px;
+				margin: 0px;
+				padding: 0px;
+				font-size: 26px;
+				
+				font-family:Arial, Helvetica, sans-serif;
+				
+
+			}
+				
+			#structure{
+				width			: 640px;
+				margin-top		: 20px;
+				margin-bottom	: 0px;
+				margin-left		: auto;
+				margin-right	: auto;
+				position		: relative;
+			}
+			
+			.menu-element-background-grey{
+				width	: 50px;
+				height	: 50px;	
+				cursor	: pointer;				
+			}
+
+			.menu-element{
+				/*float	: left;*/
+				padding	: 1px;
+
+
+
+
+
+				/*width	: 100px;
+				height	: 150px;*/
+			}
+			
+			.menu-element-container{
+				position: relative;
+			}
+							
+			.menu-element-background-color{
+				position: absolute;
+				top		: 0; 
+				left	: 0; 
+				display	: none;
+			}
+			
+			img
+			{  
+				border-style: none;		
+				/*height:100%;*/
+				/*width: 50%;}*/
+				
+			}
+			
+			a{
+				outline: red;
+			}
+			
+			.content-element{
+				display: none; 
+				padding	: 0px;
+				width: 608px;
+				clear: left;
+				margin-bottom	: 2px;
+				position:relative;
+				background:url('../pics/opacity/opacity-60p.png') repeat;
+				position	: relative;
+			}
+			
+			.main-content{
+				color: white;
+				letter-spacing: 1px;
+				font-size: 11px;
+				line-height: 1.8;
+				letter-spacing: 0.8pt;
+				font-weight: 200;
+				font-family: arial, sans-serif;
+			}
+			
+			.close-content-element{
+				position: absolute;
+				top		: 5px;
+				right	: 2px;
+				cursor	: pointer;
+			}
+
+
+   			h1{ 
+				color: white;
+				letter-spacing: 0px;
+				margin: 0px;
+				padding: 0px;
+				font-size: 18px;
+				font-weight: normal;
+				font-family:Arial, Helvetica, sans-serif;
+			} 
+
+
+			h2{ 
+				color: white;
+				letter-spacing: 0px;
+				margin: 0px;
+				padding: 0px;
+				font-size: 16px;
+				font-weight: normal;
+				font-family:Arial, Helvetica, sans-serif;
+			} 
+
+			
+			
+			h3{ 
+				color: white;
+				letter-spacing: 0px;
+				margin: 0px;
+				padding: 0px;
+				font-size: 10px;
+				font-weight: normal;
+				font-family:Arial, Helvetica, sans-serif;
+			} 
+			
+			.imgFader{ 
+				position: relative; 
+			
+				border  : 0px; 
+				height	: 113px; 
+				width	: 150px;
+			}
+			
+			.menu_table{
+				padding: 0px;
+				margin : 0px;
+				border : 0px;
+				width  : 608px;
+			}
+			
+			.menu_table td{
+				padding: 0px 0px 2px 0px; 
+				margin : 0px;	
+
+			}
+			
+			.element_menu_wrapper{
+				position: relative; 
+				padding	: 0px;
+				
+				margin	: 0px;
+			}
