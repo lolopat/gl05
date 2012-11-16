@@ -1,0 +1,181 @@
+		
+		<script language="javascript">
+		<!--
+			{foreach from=$menu key=key item=item}
+				{foreach from=$item key=key2 item=item2 name=menu_elements}
+					{if $item2.item && $item2.color_picture}
+						JSFX.Rollover("{$item2.item}", "pics/menu/{$item2.color_picture}");	
+					{/if}
+				{/foreach}
+			{/foreach}
+		//-->
+		</script>
+		{strip}
+		
+		
+		<table >
+		<tr>
+		<td width=100px><a class="cell-element" id="level1|idea" href="#">idea</a></td>
+		<td width=100px><a href="#">projekty</a></td>
+		<td width=200px><a class="cell-element" id="level3|realizacjazamowien" href="#">realizacja zamówień</a></td>
+		<td width=100px><a class="cell-element" id="level4|onas" href="#">o nas</a></td>
+		<td width=100px><a class="cell-element" id="level5|kontakt" href="#">kontakt</a></td>
+		</tr>
+		</table >
+		
+		
+		<br><br><br><br><br>
+		
+		
+		<h1>IDEA</h1>
+		
+		
+		
+		<table>
+		<tr>		
+		<td style="vertical-align:text-top; background-color: white;">
+		<div class="main-content"; style=" width=100%; height=100%"></div>
+		</td>
+		</tr>
+		<tr>
+		<td colspan="4" border="0" style="padding: 0px; margin: 0px;">
+		<div id="content-element-level1" class="content-element">lhkjhkhjl</div>
+		</td>
+		</tr>
+		</table>
+		
+			
+		
+		<h1>PROJEKTY</h1>
+		
+				<table>
+		<tr>
+			<td>
+				<div class="element_menu_wrapper">
+					<a class="cell-element" id="level2|dnw" href="#">dom 005</a>
+				</div>
+			</td>
+		<td style="vertical-align:text-top; background-color: white;">
+		<div class="main-content"; style=" width=100%; height=100%">
+		</div>
+		</td>
+		</tr>
+		<tr>
+		<td colspan="4" border="0" style="padding: 0px; margin: 0px;">
+		<div id="content-element-level2" class="content-element">gdhfhgd</div>
+		</td>
+		</tr>
+		</table>
+		
+		
+		
+		<h1>REALIZACJA ZAMÓWIEŃ</h1>
+	
+		<table>
+		<tr>		
+		<td style="vertical-align:text-top; background-color: white;">
+		<div class="main-content"; style=" width=100%; height=100%"></div>
+		</td>
+		</tr>
+		<tr>
+		<td colspan="4" border="0" style="padding: 0px; margin: 0px;">
+		<div id="content-element-level3" class="content-element">lhkjhkhjl</div>
+		</td>
+		</tr>
+		</table>
+		
+		<h1>O NAS</h1>
+		
+		<table>
+		<tr>		
+		<td style="vertical-align:text-top; background-color: white;">
+		<div class="main-content"; style=" width=100%; height=100%"></div>
+		</td>
+		</tr>
+		<tr>
+		<td colspan="4" border="0" style="padding: 0px; margin: 0px;">
+		<div id="content-element-level4" class="content-element">lhkjhkhjl</div>
+		</td>
+		</tr>
+		</table>
+		
+		<h1>KONTAKT</h1>
+		
+		<table>
+		<tr>		
+		<td style="vertical-align:text-top; background-color: white;">
+		<div class="main-content"; style=" width=100%; height=100%"></div>
+		</td>
+		</tr>
+		<tr>
+		<td colspan="4" border="0" style="padding: 0px; margin: 0px;">
+		<div id="content-element-level5" class="content-element">lhkjhkhjl</div>
+		</td>
+		</tr>
+		</table>
+		
+		
+		
+		
+
+		
+		
+		<!--
+		
+		
+		<table class="menu_table" cellspacing="0">
+			<tr>
+				{foreach from=$menu key=key item=item}
+					{foreach from=$item key=key2 item=item2 name=menu_elements}					
+							
+						<td style="background:url('pics/menu/{$item2.white_black_picture}') no-repeat; width: 200px;">							
+							{if $item2.item}
+								<div class="element_menu_wrapper">
+									<a class="cell-element" id="{$key}|{$item2.item}" href="#" onmouseover="JSFX.fadeIn('{$item2.item}')" onmouseout="JSFX.fadeOut('{$item2.item}')">
+										$key<img style="opacity: 0;" name="{$item2.item}" src="pics/menu/{$item2.color_picture}" class="imgFader">
+									</a>
+								</div>
+							{/if}
+						</td>
+						<td style="vertical-align:text-top; background-color: white;">
+							{if $item2.item=='cer06'}
+							    
+								<div class="main-content"; style=" width=100%; height=100%">
+													
+								<h1 style="color: black;">Dom 001</h1><br> powierzchnia 120 m2
+								</div>
+												
+							
+							{elseif $item2.item=='gl05'}
+								
+								<div class="main-content"; style=" width=100%; height=100%">
+													
+								
+								</div>
+								
+								
+							{elseif $item2.item=='dnw'}
+					
+								<div class="main-content"; style=" width=100%; height=100%">
+													
+								<h1 style="color: black;">Dom 001</h1><br> powierzchnia 120 m2
+								</div>
+								
+					
+							{/if}
+						</td>
+						
+							</tr>
+								<tr>
+									<td colspan="4" border="0" style="padding: 0px; margin: 0px;">
+										<div id="content-element-{$key}" class="content-element">gdhfhgd</div>
+									</td>
+								</tr>
+							<tr>
+					
+					{/foreach}
+				{/foreach}
+			</tr>
+		</table>
+		-->
+		{/strip}

@@ -1,0 +1,29 @@
+<?php /* Smarty version 2.6.25, created on 2012-09-18 00:02:11
+         compiled from plg_main_menu.html */ ?>
+		
+		<script language="javascript">
+		<!--
+			<?php $_from = $this->_tpl_vars['menu']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
+    foreach ($_from as $this->_tpl_vars['key'] => $this->_tpl_vars['item']):
+?>
+				<?php $_from = $this->_tpl_vars['item']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }$this->_foreach['menu_elements'] = array('total' => count($_from), 'iteration' => 0);
+if ($this->_foreach['menu_elements']['total'] > 0):
+    foreach ($_from as $this->_tpl_vars['key2'] => $this->_tpl_vars['item2']):
+        $this->_foreach['menu_elements']['iteration']++;
+?>
+					<?php if ($this->_tpl_vars['item2']['item'] && $this->_tpl_vars['item2']['color_picture']): ?>
+						JSFX.Rollover("<?php echo $this->_tpl_vars['item2']['item']; ?>
+", "pics/menu/<?php echo $this->_tpl_vars['item2']['color_picture']; ?>
+");	
+					<?php endif; ?>
+				<?php endforeach; endif; unset($_from); ?>
+			<?php endforeach; endif; unset($_from); ?>
+		//-->
+		</script>
+		<?php echo '<table ><tr><td width=100px><a class="cell-element" id="level1|idea" href="#">idea</a></td><td width=100px><a href="#">projekty</a></td><td width=200px><a class="cell-element" id="level3|realizacjazamowien" href="#">realizacja zamówień</a></td><td width=100px><a class="cell-element" id="level4|onas" href="#">o nas</a></td><td width=100px><a class="cell-element" id="level5|kontakt" href="#">kontakt</a></td></tr></table ><br><br><br><br><br><h1>IDEA</h1><table><tr><td style="vertical-align:text-top; background-color: white;"><div class="main-content"; style=" width=100%; height=100%"></div></td></tr><tr><td colspan="4" border="0" style="padding: 0px; margin: 0px;"><div id="content-element-level1" class="content-element">lhkjhkhjl</div></td></tr></table><h1>PROJEKTY</h1><table><tr><td><div class="element_menu_wrapper"><a class="cell-element" id="level2|dnw" href="#">dom 005</a></div></td><td style="vertical-align:text-top; background-color: white;"><div class="main-content"; style=" width=100%; height=100%"></div></td></tr><tr><td colspan="4" border="0" style="padding: 0px; margin: 0px;"><div id="content-element-level2" class="content-element">gdhfhgd</div></td></tr></table><h1>REALIZACJA ZAMÓWIEŃ</h1><table><tr><td style="vertical-align:text-top; background-color: white;"><div class="main-content"; style=" width=100%; height=100%"></div></td></tr><tr><td colspan="4" border="0" style="padding: 0px; margin: 0px;"><div id="content-element-level3" class="content-element">lhkjhkhjl</div></td></tr></table><h1>O NAS</h1><table><tr><td style="vertical-align:text-top; background-color: white;"><div class="main-content"; style=" width=100%; height=100%"></div></td></tr><tr><td colspan="4" border="0" style="padding: 0px; margin: 0px;"><div id="content-element-level4" class="content-element">lhkjhkhjl</div></td></tr></table><h1>KONTAKT</h1><table><tr><td style="vertical-align:text-top; background-color: white;"><div class="main-content"; style=" width=100%; height=100%"></div></td></tr><tr><td colspan="4" border="0" style="padding: 0px; margin: 0px;"><div id="content-element-level5" class="content-element">lhkjhkhjl</div></td></tr></table><!--<table class="menu_table" cellspacing="0"><tr>'; ?><?php $_from = $this->_tpl_vars['menu']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
+    foreach ($_from as $this->_tpl_vars['key'] => $this->_tpl_vars['item']):
+?><?php echo ''; ?><?php $_from = $this->_tpl_vars['item']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }$this->_foreach['menu_elements'] = array('total' => count($_from), 'iteration' => 0);
+if ($this->_foreach['menu_elements']['total'] > 0):
+    foreach ($_from as $this->_tpl_vars['key2'] => $this->_tpl_vars['item2']):
+        $this->_foreach['menu_elements']['iteration']++;
+?><?php echo '<td style="background:url(\'pics/menu/'; ?><?php echo $this->_tpl_vars['item2']['white_black_picture']; ?><?php echo '\') no-repeat; width: 200px;">'; ?><?php if ($this->_tpl_vars['item2']['item']): ?><?php echo '<div class="element_menu_wrapper"><a class="cell-element" id="'; ?><?php echo $this->_tpl_vars['key']; ?><?php echo '|'; ?><?php echo $this->_tpl_vars['item2']['item']; ?><?php echo '" href="#" onmouseover="JSFX.fadeIn(\''; ?><?php echo $this->_tpl_vars['item2']['item']; ?><?php echo '\')" onmouseout="JSFX.fadeOut(\''; ?><?php echo $this->_tpl_vars['item2']['item']; ?><?php echo '\')">$key<img style="opacity: 0;" name="'; ?><?php echo $this->_tpl_vars['item2']['item']; ?><?php echo '" src="pics/menu/'; ?><?php echo $this->_tpl_vars['item2']['color_picture']; ?><?php echo '" class="imgFader"></a></div>'; ?><?php endif; ?><?php echo '</td><td style="vertical-align:text-top; background-color: white;">'; ?><?php if ($this->_tpl_vars['item2']['item'] == 'cer06'): ?><?php echo '<div class="main-content"; style=" width=100%; height=100%"><h1 style="color: black;">Dom 001</h1><br> powierzchnia 120 m2</div>'; ?><?php elseif ($this->_tpl_vars['item2']['item'] == 'gl05'): ?><?php echo '<div class="main-content"; style=" width=100%; height=100%"></div>'; ?><?php elseif ($this->_tpl_vars['item2']['item'] == 'dnw'): ?><?php echo '<div class="main-content"; style=" width=100%; height=100%"><h1 style="color: black;">Dom 001</h1><br> powierzchnia 120 m2</div>'; ?><?php endif; ?><?php echo '</td></tr><tr><td colspan="4" border="0" style="padding: 0px; margin: 0px;"><div id="content-element-'; ?><?php echo $this->_tpl_vars['key']; ?><?php echo '" class="content-element">gdhfhgd</div></td></tr><tr>'; ?><?php endforeach; endif; unset($_from); ?><?php echo ''; ?><?php endforeach; endif; unset($_from); ?><?php echo '</tr></table>-->'; ?>

@@ -1,0 +1,149 @@
+			body{
+				/*background-image		:url('../pics/tlo1bw.jpg');*/
+				margin					: 0;
+				padding					: 0;
+				background-attachment	: fixed;
+				
+				/*background: url(bgimage.jpg) no-repeat;*/
+				background-size: 100%;
+			}
+				
+			#structure{
+				width			: 840px;
+				margin-top		: 20px;
+				margin-bottom	: 0px;
+				margin-left		: auto;
+				margin-right	: auto;				
+				position		: relative;
+			}
+			
+			.menu-element-background-grey{
+				width	: 200px;
+				height	: 150px;	
+				cursor	: pointer;				
+			}
+
+			.menu-element{
+				/*float	: left;*/
+				padding	: 1px;
+
+
+				
+
+
+				/*width	: 200px;
+				height	: 150px;*/
+			}
+			
+			.menu-element-container{
+				position: relative;
+			}
+							
+			.menu-element-background-color{
+				position: absolute;
+				top		: 0; 
+				left	: 0; 
+				display	: none;
+			}
+			
+			img
+			{  
+				border-style: none;			
+			}
+			
+			a{
+				outline: red;
+				color: black;
+				letter-spacing: 0px;
+				margin: 0px;
+				padding: 0px;
+				font-size: 16px;
+				font-weight: bold;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			
+			.content-element{
+				display: none; 
+				padding	: 0px;
+				width: 809px;
+				clear: left;
+				margin-bottom	: 3px;
+				position:relative;
+				/*background:url('../pics/opacity/opacity-60p.png') repeat;*/
+				position	: relative;
+			}
+			
+			.main-content{
+				color: black;
+				letter-spacing: 1px;
+				font-size: 14px;
+				/*font-weight: bold;*/
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			
+			.close-content-element{
+				position: absolute;
+				top		: 5px;
+				right	: 20px;
+				cursor	: pointer;
+			}
+
+
+   			h1{ 
+				color: black;
+				letter-spacing: 0px;
+				margin: 0px;
+				padding: 0px;
+				font-size: 25px;
+				font-weight: bold;
+				font-family:Arial, Helvetica, sans-serif;
+			} 
+
+
+			h2{ 
+				color: black;
+				letter-spacing: 0px;
+				margin: 0px;
+				padding: 0px;
+				font-size: 16px;
+				font-weight: bold;
+				font-family:Arial, Helvetica, sans-serif;
+			} 
+
+			gl05txt1{ 
+				color: black;
+				letter-spacing: 1px;
+				font-size: 15px;
+				font-weight: bold;
+				font-family:Arial, Helvetica, sans-serif;
+			} 
+			
+			.imgFader{ 
+				position: relative; 
+				border  : 0px; 
+				height	: 150px; 
+				width	: 200px;
+			}
+			
+			.menu_table{
+				padding: 0px;
+				margin : 0px;
+				border : 0px;
+				width  : 812px;
+			}
+			
+			.menu_table td{
+				padding: 0px 0px 3px 0px; 
+				margin : 0px;	
+			}
+			
+			.element_menu_wrapper{
+				position: relative; 
+				padding	: 0px; 
+				margin	: 0px;
+			}
+			
+			a:link    {color:grey;}
+			a:visited {color:grey;}
+			a:hover   {color:black;}
+			a:active  {color:black;}
