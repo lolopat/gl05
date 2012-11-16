@@ -1,0 +1,6 @@
+php_flag display_errors off
+Options FollowSymLinks
+RewriteEngine On
+php_flag allow_call_time_pass_reference On
+
+RewriteRule !(.*)\.(gif|jpg|png|ico|css|php|js|psd|swf|pdf|txt|csv|zip)$ /index.php [L,QSA]
