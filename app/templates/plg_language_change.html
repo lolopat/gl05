@@ -1,0 +1,31 @@
+<script language="javascript">
+	JSFX.Rollover( "{$flag_language_pl}" , "pics/language/{$flag_language_pl}.png");
+	JSFX.Rollover( "{$flag_language_en}" , "pics/language/{$flag_language_en}.png");
+</script>
+
+<div style="position: absolute; top: 0px; right: -20%; color: white; z-index: 2; width: 80px;">
+	<table style="width: 80px; height: 0px;" cellpadding="0" cellspacing="0">
+		<tr>
+			<td style="background-image:url('pics/language/{$flag_language_pl}_grey.png'); background-repeat:no-repeat;">
+				<a 
+         {if $current_lang == $flag_language_en}
+          onMouseOver="JSFX.fadeIn('{$flag_language_pl}')" 
+					onMouseOut="JSFX.fadeOut('{$flag_language_pl}')"
+         {/if} 
+          href="?language={$flag_language_pl}" style="text-decoration: none;"/>
+					<img name="{$flag_language_pl}" style="margin: 0px;  padding: 0px 0px 34px 0px; {if $current_lang == $flag_language_pl} opacity: 0.999; {else} opacity: 0.0; {/if}" src="pics/language/{$flag_language_pl}_grey.png"/>
+				</a> 			
+			</td>
+			<td style="background-image:url('pics/language/{$flag_language_en}_grey.png'); background-repeat:no-repeat;">
+				<a  
+           {if $current_lang == $flag_language_pl}
+           onMouseOver="JSFX.fadeIn('{$flag_language_en}')"
+					 onMouseOut="JSFX.fadeOut('{$flag_language_en}')" 
+           {/if}
+           href="?language={$flag_language_en}" style="text-decoration: none;"/>
+					<img name="{$flag_language_en}" style="margin: 0px;  padding: 0px 0px 34px 0px; {if $current_lang == $flag_language_en} opacity: 0.999; {else} opacity: 0.0; {/if} " src="pics/language/{$flag_language_en}_grey.png"/>
+				</a> 
+			</td>
+		</tr>		
+	</table>
+</div>

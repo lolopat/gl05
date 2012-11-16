@@ -1,0 +1,51 @@
+		
+		<script language="javascript">
+		var subpage = '{$subpage}';
+		{literal}
+		<!--	
+			$(document).ready(function()
+			{
+			   $(".latest_img").hover
+			   (
+					function()
+					{
+						$(this).fadeTo("slow", 1.0); // This should set the opacity to 100% on hover
+					},function()
+					{
+						$(this).fadeTo("slow", 0.0); // This should set the opacity back to 30% on mouseout
+					}
+				);
+			});
+		-->
+		{/literal}
+		</script>
+		{strip}
+		<table class="menu_table" cellspacing="0">
+			<tr>
+				{foreach from=$menu key=key item=item}
+					{foreach from=$item key=key2 item=item2 name=menu_elements}					
+							
+						<td style="background:url('pics/menu/{$item2.white_black_picture}') no-repeat;">							
+							{if $item2.item}
+								<div class="element_menu_wrapper">
+									<a class="cell-element" id="{$key}|{$item2.item}" name="{$item2.item}" href="#">
+										<img style="opacity: 0.0;" name="{$item2.item}" src="pics/menu/{$item2.color_picture}" class="imgFader latest_img">
+									</a>
+								</div>
+							{/if}
+						</td>
+						
+						{if $smarty.foreach.menu_elements.iteration % 4 == 0}							
+							</tr>
+								<tr>
+									<td colspan="4" border="0" style="padding: 0px; margin: 0px;">
+										<div id="content-element-{$key}" class="content-element"></div>
+									</td>
+								</tr>
+							<tr>
+						{/if}
+					{/foreach}
+				{/foreach}
+			</tr>
+		</table>
+		{/strip}

@@ -1,0 +1,42 @@
+		
+		<script language="javascript">
+		<!--
+			{foreach from=$menu key=key item=item}
+				{foreach from=$item key=key2 item=item2 name=menu_elements}
+					{if $item2.item && $item2.color_picture}
+						JSFX.Rollover("{$item2.item}", "pics/menu/{$item2.color_picture}");	
+					{/if}
+				{/foreach}
+			{/foreach}
+		//-->
+		</script>
+		{strip}
+		<table class="menu_table" cellspacing="0">
+			<tr>
+				{foreach from=$menu key=key item=item}
+					{foreach from=$item key=key2 item=item2 name=menu_elements}					
+							
+						<td style="background:url('pics/menu/{$item2.white_black_picture}') no-repeat;">							
+							{if $item2.item}
+								<div class="element_menu_wrapper">
+									<a class="cell-element" id="{$key}|{$item2.item}" href="#" onmouseover="JSFX.fadeIn('{$item2.item}')" onmouseout="JSFX.fadeOut('{$item2.item}')">
+										<img style="opacity: 0;" name="{$item2.item}" src="pics/menu/{$item2.color_picture}" class="imgFader">
+									</a>
+								</div>
+							{/if}
+						</td>
+						
+						{if $smarty.foreach.menu_elements.iteration % 4 == 0}							
+							</tr>
+								<tr>
+									<td colspan="4" border="0" style="padding: 0px; margin: 0px;">
+										<div id="content-element-{$key}" class="content-element"></div>
+									</td>
+								</tr>
+							<tr>
+						{/if}
+					{/foreach}
+				{/foreach}
+			</tr>
+		</table>
+		{/strip}
