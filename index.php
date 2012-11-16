@@ -9,6 +9,8 @@
 	//main plugin
 	$CBase = new CBasePlugin();
 	
+	
+	
        /**
 	* perform request analyze
 	*/
